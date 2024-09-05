@@ -159,4 +159,13 @@ if (CasaConFirsthOrDedault == null ) {
 Console.WriteLine("existe !Si existe!");
 */
 #endregion
+#region typeOf
+var listaEmpleados = new List<Empleado>() {
+    new Medico(){ nombre= "Jorge Casa" },
+    new Enfermero(){ nombre = "Raul Blanco"}
+};
 
+var medico = listaEmpleados.OfType<Medico>();
+Console.WriteLine(medico.Single().nombre);
+
+#endregion
