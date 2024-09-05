@@ -27,23 +27,26 @@ Console.WriteLine("-----------------------------------------------------");
 using IntroduccionLinQ;
 using IntroduccionLinQ;
 #region ListaModelos
+// Listas para almacenar casas y habitantes
 List<Casa> ListaCasas = new List<Casa>();
 List<Habitante> ListaHabitantes = new List<Habitante>();
-#endregion
+
+// Añadir casas a la lista
 #region listaCasa
+// Añadiendo casas a la lista ListaCasas
 ListaCasas.Add(new Casa
 {
-    Id = 1,
-    Direccion = "3 av Norte ArcanCity",
-    Ciudad = "Gothan City",
-    numeroHabitaciones = 20,
+    Id = 1, // Identificador de la casa
+    Direccion = "3 av Norte ArcanCity", // Dirección de la casa
+    Ciudad = "Gothan City", // Ciudad en la que se encuentra la casa
+    numeroHabitaciones = 20 // Número de habitaciones en la casa
 });
 ListaCasas.Add(new Casa
 {
     Id = 2,
     Direccion = "6 av Sur SmollVille",
     Ciudad = "Metropolis",
-    numeroHabitaciones = 5,
+    numeroHabitaciones = 5
 });
 ListaCasas.Add(new Casa
 {
@@ -52,18 +55,21 @@ ListaCasas.Add(new Casa
     Ciudad = "New York"
 });
 #endregion
+
+// Añadir habitantes a la lista
 #region ListaHabitante
+// Añadiendo habitantes a la lista ListaHabitantes
 ListaHabitantes.Add(new Habitante
 {
-    IdHabitante = 1,
-    Nombre = "Bruno Diaz",
-    Edad = 36,
-    IdCasa = 1
+    IdHabitante = 1, // Identificador del habitante
+    Nombre = "Bruno Diaz", // Nombre del habitante
+    Edad = 36, // Edad del habitante
+    IdCasa = 1 // Identificador de la casa en la que vive
 });
 ListaHabitantes.Add(new Habitante
 {
     IdHabitante = 2,
-    Nombre = "Clark Kent.",
+    Nombre = "Clark Kent",
     Edad = 40,
     IdCasa = 2
 });
@@ -76,62 +82,69 @@ ListaHabitantes.Add(new Habitante
 });
 ListaHabitantes.Add(new Habitante
 {
-    IdHabitante = 3,
+    IdHabitante = 4, // Corrección en el IdHabitante
     Nombre = "Tia Mey",
     Edad = 85,
     IdCasa = 3
 });
 ListaHabitantes.Add(new Habitante
 {
-    IdHabitante = 2,
+    IdHabitante = 5, // Corrección en el IdHabitante
     Nombre = "Luise Lain",
     Edad = 40,
     IdCasa = 2
 });
 ListaHabitantes.Add(new Habitante
 {
-    IdHabitante = 1,
+    IdHabitante = 6, // Corrección en el IdHabitante
     Nombre = "Selina Kyle",
     Edad = 30,
     IdCasa = 1
 });
 ListaHabitantes.Add(new Habitante
 {
-    IdHabitante = 1,
+    IdHabitante = 7, // Corrección en el IdHabitante
     Nombre = "Alfred",
     Edad = 65,
     IdCasa = 1
 });
 ListaHabitantes.Add(new Habitante
 {
-    IdHabitante = 1,
+    IdHabitante = 8, // Corrección en el IdHabitante
     Nombre = "Nathan Drake",
     Edad = 36,
     IdCasa = 1
 });
 #endregion
+
+// Consultas LINQ
 #region SentenciasLinQ
+// Consulta LINQ para filtrar habitantes mayores de 40 años
 IEnumerable<Habitante> ListaEdad = from ObjetoProvicional
                                    in ListaHabitantes
-                                   where ObjetoProvicional.Edad > 40
+                                   where ObjetoProvicional.Edad > 40 // Condición: Edad mayor de 40
                                    select ObjetoProvicional;
 
+// Imprimir datos de habitantes mayores de 40 años
 foreach (Habitante objetoProcicional2 in ListaEdad)
 {
     Console.WriteLine(objetoProcicional2.datosHabitante());
 }
 
-//Join
+// Consulta LINQ con Join para encontrar habitantes en "Gothan City"
 IEnumerable<Habitante> listaCasaGothan = from objetoTemporalHabitante in ListaHabitantes
                                          join objetoTemporalCasa in ListaCasas
-                                         on objetoTemporalHabitante.IdHabitante equals objetoTemporalCasa.Id
-                                         where objetoTemporalCasa.Ciudad == "Gothan City"
+                                         on objetoTemporalHabitante.IdCasa equals objetoTemporalCasa.Id // Join basado en el identificador de la casa
+                                         where objetoTemporalCasa.Ciudad == "Gothan City" // Filtrar por ciudad
                                          select objetoTemporalHabitante;
+
+// Imprimir datos de habitantes que viven en "Gothan City"
 Console.WriteLine("----------------------------------------------------------------------------------------------");
 foreach (Habitante h in listaCasaGothan)
 {
     Console.WriteLine(h.datosHabitante());
 }
+
 
 #endregion
 #region FirsthAndFirsthOrDefault
