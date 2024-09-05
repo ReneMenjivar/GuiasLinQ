@@ -1,0 +1,15 @@
+C:\Users\diego\OneDrive\Escritorio\Proyecto Progra ll\IntroduccionLinQ\bin\Debug\net8.0\IntroduccionLinQ.exe
+C:\Users\diego\OneDrive\Escritorio\Proyecto Progra ll\IntroduccionLinQ\bin\Debug\net8.0\IntroduccionLinQ.deps.json
+C:\Users\diego\OneDrive\Escritorio\Proyecto Progra ll\IntroduccionLinQ\bin\Debug\net8.0\IntroduccionLinQ.runtimeconfig.json
+C:\Users\diego\OneDrive\Escritorio\Proyecto Progra ll\IntroduccionLinQ\bin\Debug\net8.0\IntroduccionLinQ.dll
+C:\Users\diego\OneDrive\Escritorio\Proyecto Progra ll\IntroduccionLinQ\bin\Debug\net8.0\IntroduccionLinQ.pdb
+C:\Users\diego\OneDrive\Escritorio\Proyecto Progra ll\IntroduccionLinQ\obj\Debug\net8.0\IntroduccionLinQ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\diego\OneDrive\Escritorio\Proyecto Progra ll\IntroduccionLinQ\obj\Debug\net8.0\IntroduccionLinQ.AssemblyInfoInputs.cache
+C:\Users\diego\OneDrive\Escritorio\Proyecto Progra ll\IntroduccionLinQ\obj\Debug\net8.0\IntroduccionLinQ.AssemblyInfo.cs
+C:\Users\diego\OneDrive\Escritorio\Proyecto Progra ll\IntroduccionLinQ\obj\Debug\net8.0\IntroduccionLinQ.csproj.CoreCompileInputs.cache
+C:\Users\diego\OneDrive\Escritorio\Proyecto Progra ll\IntroduccionLinQ\obj\Debug\net8.0\IntroduccionLinQ.dll
+C:\Users\diego\OneDrive\Escritorio\Proyecto Progra ll\IntroduccionLinQ\obj\Debug\net8.0\refint\IntroduccionLinQ.dll
+C:\Users\diego\OneDrive\Escritorio\Proyecto Progra ll\IntroduccionLinQ\obj\Debug\net8.0\IntroduccionLinQ.pdb
+C:\Users\diego\OneDrive\Escritorio\Proyecto Progra ll\IntroduccionLinQ\obj\Debug\net8.0\IntroduccionLinQ.genruntimeconfig.cache
+C:\Users\diego\OneDrive\Escritorio\Proyecto Progra ll\IntroduccionLinQ\obj\Debug\net8.0\ref\IntroduccionLinQ.dll
+C:\Users\diego\OneDrive\Escritorio\Proyecto Progra ll\IntroduccionLinQ\obj\Debug\net8.0\IntroduccionLinQ.sourcelink.json
