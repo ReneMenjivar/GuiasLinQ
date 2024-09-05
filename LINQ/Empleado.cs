@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace IntroduccionLinQ
 {
+    //Esta es la clase Empleado 
     public class Empleado
     {
-        public string nombre { get; set; }
+        public string nombre { get; set; } // Propiedad para almacenar el nombre 
     }
 }

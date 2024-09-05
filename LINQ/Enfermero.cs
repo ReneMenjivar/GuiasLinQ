@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace IntroduccionLinQ
 {
+    //La clase Enfermero se hereda de la clase Empleado 
     public class Enfermero :  Empleado
     {
-        public string nombre { get; set; }
+        public string nombre { get; set; } // Propiedad para almacenar el nombre 
     }
 }
